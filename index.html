@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kumar Prism Towers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header class="hero-header">
+
+  <video autoplay muted loop class="bg-video">
+    <source src="assets/video/hero-banner.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <!-- Custom Header -->
+  <div class="custom-header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- Left Logo -->
+      <div class="logo-left">
+        <img src="assets/images/kumar-world.png" alt="Logo">
+      </div>
+
+      <!-- Center Logo -->
+      <div class="logo-center">
+        <img src="assets/images/kumar-privie.png" alt="Logo">
+      </div>
+
+      <!-- Hamburger -->
+      <div class="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+  <span class="line line1"></span>
+  <span class="line line2"></span>
+  <span class="line line3"></span>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column text-center gap-3">
+        <li><a class="nav-link" href="#about">About Us</a></li>
+        <li><a class="nav-link" href="#amenities">Amenities</a></li>
+        <li><a class="nav-link" href="#location">Location</a></li>
+        <li><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content container text-center text-white">
+    <h1>KUMAR PRISM TOWERS</h1>
+    <h3>WHERE THE RARE FEEL AT HOME.</h3>
+  </div>
+
+</header>
+<!-- Second section -->
+<section class="experience-section" id="contact">
+   <div class="experience-bg"></div>
+  <div class="container text-center">
+
+    <h2 class="experience-title">Experience It Firsthand</h2>
+
+    <div class="experience-box">
+
+     <form id="leadForm" novalidate>
+
+<div class="experience-form row g-3 align-items-center">
+
+  <div class="col-md-4">
+    <input type="text" name="name" class="form-control custom-input" placeholder="Name" required>
+    <small class="error"></small>
+  </div>
+
+  <div class="col-md-4">
+    <input type="email" name="email" class="form-control custom-input" placeholder="Email" required>
+    <small class="error"></small>
+  </div>
+
+  <div class="col-md-4">
+    <input type="tel" name="mobile" id="mobile" class="form-control custom-input" placeholder="Phone" required>
+    <small class="error"></small>
+  </div>
+
+  <div class="col-md-12 d-none" id="otpSection">
+    <input type="text" id="otpInput" class="form-control custom-input" placeholder="Enter OTP">
+    <button type="button" class="btn btn-secondary mt-2" id="verifyOtpBtn">Verify OTP</button>
+    <small class="error" id="otpError"></small>
+  </div>
+
+  <div class="col-md-12">
+    <button type="button" class="btn btn-outline-secondary w-100" id="sendOtpBtn">Send OTP</button>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn schedule-btn w-100" id="submitBtn" disabled>
+      Schedule Site Visit
+    </button>
+  </div>
+
+</div>
+</form>
+
+
+    </div>
+
+    <div class="experience-line"></div>
+
+  </div>
+</section>
+
+<!-- Brand Strip -->
+<section class="brand-strip" id="about">
+  <div class="container brand-wrap d-flex align-items-center">
+
+    <!-- Left Logo -->
+    <div class="brand-logo">
+      <img src="assets/images/Kumar_Prism_Towers_Logo.png" alt="Kumar Prism Towers">
+    </div>
+
+    <!-- Middle Divider -->
+    <div class="brand-divider"></div>
+
+    <!-- Right Text -->
+    <div class="brand-text">
+      <h2>3 & 4 BHK, Designed<br>For Elevated Living</h2>
+    </div>
+
+  </div>
+</section>
+
+<!-- about us image section -->
+
+
+<section class="image-animate-section">
+  <div class="image-wrapper">
+
+    <!-- Desktop Titles -->
+    <h3 class="title title-left">SOME HOMES<br> GIVE YOU<br> SHELTER. </h3>
+
+    <!-- Slider / Images -->
+    <div class="mobile-slider">
+
+      <div class="image image-left">
+        <img src="assets/images/terrace-one.webp">
+      </div>
+
+      <div class="image image-center">
+        <img src="assets/images/Frame-59.png">
+        <div class="center-shadow"></div>
+      </div>
+
+      <div class="image image-right">
+        <img src="assets/images/terrace-two.webp">
+      </div>
+
+    </div>
+
+    <div class="slider-dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+    <h3 class="title title-right">A RARE <br>FEW GIVE<br> PERSPECTIVE</h3>
+
+    <!-- Mobile Titles -->
+    <div class="mobile-titles">
+      <h3>SOME HOMES GIVE YOU SHELTER </h3>
+      <h3>A RARE FEW GIVE PERSPECTIVE</h3>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- About text section -->
+<section class="features-section">
+  <div class="container text-center">
+
+    <!-- Full width intro -->
+    <p class="features-intro">
+      Welcome to a place where everyday life feels slightly taller, lighter, calmer.
+      As if someone turned the world a few degrees upward to offer you a rare experience.
+      Crafted for effortless living, these 3 & 4 BHK ultra-luxurious residences are shaped by
+      international designers. They wrap you in the gentle comfort of a gold-rated green building
+      right in the heart of Pune.
+    </p>
+
+    <!-- Constrained icons row -->
+    <div class="features-wrapper mx-auto">
+      <div class="row justify-content-center">
+
+        <div class="col-6 col-md feature-item">
+          <div class="icon-box">
+            <img class="frame-top" src="assets/images/top.svg">
+            <img class="feature-icon" src="assets/images/green-building.svg">
+            <img class="frame-bottom" src="assets/images/bottom.svg">
+          </div>
+          <h4>Gold Rated<br>Green Building</h4>
+        </div>
+
+        <div class="col-6 col-md feature-item">
+          <div class="icon-box">
+            <img class="frame-top" src="assets/images/top.svg">
+            <img class="feature-icon" src="assets/images/retail.svg">
+            <img class="frame-bottom" src="assets/images/bottom.svg">
+          </div>
+          <h4>Exclusive Retail<br>Experience</h4>
+        </div>
+
+        <div class="col-6 col-md feature-item">
+          <div class="icon-box">
+            <img class="frame-top" src="assets/images/top.svg">
+            <img class="feature-icon" src="assets/images/club.svg">
+            <img class="frame-bottom" src="assets/images/bottom.svg">
+          </div>
+          <h4>Clubhouse at the<br>34th level</h4>
+        </div>
+
+        <div class="col-6 col-md feature-item">
+          <div class="icon-box">
+            <img class="frame-top" src="assets/images/top.svg">
+            <img class="feature-icon" src="assets/images/designer.svg">
+            <img class="frame-bottom" src="assets/images/bottom.svg">
+          </div>
+          <h4>Designed by<br>International Designers</h4>
+        </div>
+
+        <div class="col-6 col-md feature-item">
+          <div class="icon-box">
+            <img class="frame-top" src="assets/images/top.svg">
+            <img class="feature-icon" src="assets/images/view.svg">
+            <img class="frame-bottom" src="assets/images/bottom.svg">
+          </div>
+          <h4>Private decks with<br>panoramic views</h4>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Luxury perfected section -->
+<section class="luxury-section" id="amenities">
+  <div class="container text-center">
+    <h2 class="luxury-title">LUXURY, PERFECTED IN EVERY ELEMENT</h2>
+
+    <!-- Slider wrapper (used ONLY on mobile via CSS/JS) -->
+    <div class="luxury-slider" aria-roledescription="carousel">
+      
+      <!-- Track -->
+      <div class="luxury-row luxury-track">
+        
+        <!-- Slide -->
+        <div class="luxury-card luxury-slide">
+          <div class="luxury-media">
+            <img src="assets/images/Amenities-Cards02 (3).jpg" alt="Infinity Pool">
+          </div>
+          <!-- Caption moved outside image (mobile only via CSS) -->
+          <div class="luxury-caption">Infinity Pool</div>
+        </div>
+
+        <div class="luxury-card luxury-slide">
+          <div class="luxury-media">
+            <img src="assets/images/Amenities-Cards02 (1).jpg" alt="Yoga Pavilion">
+          </div>
+          <div class="luxury-caption">Yoga Pavilion</div>
+        </div>
+
+        <div class="luxury-card luxury-slide">
+          <div class="luxury-media">
+            <img src="assets/images/Amenities-Cards02 (2).jpg" alt="Sky Lounge">
+          </div>
+          <div class="luxury-caption">Sky Lounge</div>
+        </div>
+
+      </div>
+
+      <!-- Navigation dots (mobile only) -->
+      <div class="luxury-dots" role="tablist" aria-label="Carousel Navigation"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Amenities section 1 -->
+
+<section class="amenities-section">
+  <div class="container">
+
+    <div class="amenities-title">
+      <span class="line"></span>
+      <h2>Rooftop Amenities</h2>
+      <span class="line"></span>
+    </div>
+
+    <div class="row justify-content-center">
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/club.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Clubhouse at the<br>34th level</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/gym.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Rooftop<br>Gym</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/yoga.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Yoga<br>Deck</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/theatre.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Open-Air<br>Theatre</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/senior.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Senior<br>Citizens Area</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/aroma.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Aroma<br>Garden</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/stargazing.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Star Gazing<br>Deck</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/zen.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Zen<br>Garden</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Amenities section 2 -->
+
+<section class="amenities-section">
+  <div class="container">
+
+    <div class="amenities-title">
+      <span class="line"></span>
+      <h2>Ground-level Amenities</h2>
+      <span class="line"></span>
+    </div>
+
+    <div class="row justify-content-center">
+
+      <!-- Item -->
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/swimming.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Swimming <br>Pool</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/jacuzzi.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Jacuzzi</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/cricket.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Box <br> Cricket</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/pet-park.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Pet<br>Park</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/party.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Party<br>Lawn</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/kids-play.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Kids Play<br>Area</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/event.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Event<br>Lounge</h4>
+      </div>
+
+      <div class="col-6 col-md-3 feature-item">
+        <div class="icon-box">
+          <img class="frame-top" src="assets/images/top.svg">
+          <img class="feature-icon" src="assets/images/kids-pool.svg">
+          <img class="frame-bottom" src="assets/images/bottom.svg">
+        </div>
+        <h4>Kids'<br>Pool</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Location Section -->
+
+<section class="location-section" id="location">
+  <div class="container">
+
+    <div class="location-header text-center">
+      <h2>RARE IS A PLACE WHERE LIFE FALLS<br>PERFECTLY INTO PLACE.</h2>
+
+      <p>
+        In Mundhwa, life unfolds with the ease of having everything you need.<br>
+        From trusted hospitals and reputed schools to bustling markets and essential banking,<br>
+        it's a location where proximity becomes peace of mind.
+      </p>
+    </div>
+
+    <div class="map-wrapper">
+      <iframe 
+        src="https://www.google.com/maps?q=Kumar+Prism+Towers,+Pune&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- Connectivity Section -->
+
+<section class="connectivity-section">
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <!-- Education -->
+      <div class="col-md-6">
+        <div class="info-block">
+          <div class="info-title">
+            <h3>Education Hubs</h3>
+            <span class="line"></span>
+          </div>
+          <ul>
+            <li><span>HDFC School</span><span>5 Min</span></li>
+            <li><span>Orbis School</span><span>10 Min</span></li>
+            <li><span>Wonder School</span><span>8 Min</span></li>
+            <li><span>Lonkar Junior College</span><span>5 Min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Malls -->
+      <div class="col-md-6">
+        <div class="info-block">
+          <div class="info-title">
+            <h3>Malls & Entertainment</h3>
+            <span class="line"></span>
+          </div>
+          <ul>
+            <li><span>Kopa Mall</span><span>15 Min</span></li>
+            <li><span>Seasons Mall</span><span>3 Min</span></li>
+            <li><span>Amanora Mall</span><span>3 Min</span></li>
+            <li><span>Phoenix Marketcity</span><span>20 Min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Airport -->
+      <div class="col-md-6">
+        <div class="info-block">
+          <div class="info-title">
+            <h3>Airport & Citywide Connectivity</h3>
+            <span class="line"></span>
+          </div>
+          <ul>
+            <li><span>Kalyani Nagar Metro</span><span>20 Min</span></li>
+            <li><span>Pune Airport</span><span>25 Min</span></li>
+            <li><span>Pune Railway Station</span><span>30 Min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- IT Parks -->
+      <div class="col-md-6">
+        <div class="info-block">
+          <div class="info-title">
+            <h3>IT Parks & Business Districts</h3>
+            <span class="line"></span>
+          </div>
+          <ul>
+            <li><span>Magarpatta IT Park</span><span>5 Min</span></li>
+            <li><span>SP Infocity</span><span>15 Min</span></li>
+            <li><span>EON IT Park</span><span>15 Min</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Hospitals -->
+      <div class="col-md-12">
+        <div class="info-block">
+          <div class="info-title full">
+            <h3>Hospitals & Healthcare</h3>
+            <span class="line"></span>
+          </div>
+          <ul class="hospital-grid">
+            <li><span>Noble Hospital</span><span>10 Min</span></li>
+            <li><span>Sahyadri Hospital</span><span>10 Min</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- luxury-section -->
+
+<section class="luxury-legacy">
+  <div class="container">
+
+    <h2 class="section-title">LUXURY YOU CAN TRUST</h2>
+
+    <!-- Legacy Card -->
+    <div class="card legacy-card">
+
+      <div class="card-title">
+        <span></span>
+        <h3>LEGACY</h3>
+        <span></span>
+      </div>
+
+      <div class="legacy-grid">
+        <div class="legacy-item">
+          <h4>59+</h4>
+          <p>Years Legacy</p>
+        </div>
+
+        <div class="legacy-item">
+          <h4>135+</h4>
+          <p>Completed Projects</p>
+        </div>
+
+        <div class="legacy-item">
+          <h4>6+</h4>
+          <p>Ongoing Projects</p>
+        </div>
+
+        <div class="legacy-item">
+          <h4>40,000+</h4>
+          <p>Happy Families</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brand Card -->
+    <div class="card brand-card">
+
+      <div class="brand-logo-2">
+        <img src="assets/images/kumar-world.png">
+      </div>
+
+      <h3 class="brand-tagline">
+        NOT JUST ELEVATED LIVING.<br>
+        LIVING THAT ELEVATES YOU.
+      </h3>
+
+      <p class="brand-text">
+        For over decades, Kumar has built more than residences, it has built landmarks, legacies, and quiet luxuries that stand taller with every passing year.
+        <br><br>
+        Prism Towers is its newest vantage point, a place where living is a little lighter, a little brighter, and wonderfully, unmistakably RARE.
+      </p>
+
+      <div class="social-row">
+        <span>Follow Us on</span>
+        <span class="line"></span>
+        <div class="icons">
+          <a href="https://www.facebook.com/kumarprivie"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://linkedin.com/company/kumar-world"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@kumar_world"><i class="fab fa-youtube"></i></a>
+          <!-- <a href="#"><i class="fab fa-x-twitter"></i></a> -->
+          <a href="https://www.facebook.com/kumarprivie"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-top row">
+
+      <div class="col-md-3 footer-col">
+        <h4>Contacts</h4>
+        <p class="label">Corporate Office</p>
+        <ul>
+          <li>Kumar Capital, 3rd Floor, 2413 East Street, Pune, Maharashtra – 411001</li>
+          <li>Sales Enquiry : 7996315000</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4>Prive Projects</h4>
+        <ul>
+          <li>Coming Soon - Kumar Prism Towers</li>
+          <li>Kumar Sanctum</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li> <a href="#about">About Us</a></li>
+            <li><a href="pdf/privacy-policy.pdf" target="_blank" rel="noopener">Privacy Policy</a></li>
+          <!-- <li>Disclaimer</li> -->
+        </ul>
+      </div>
+
+      <div class="col-md-3 footer-col footer-qr text-center">
+        <img src="assets/images/qr.jpg" class="qr-img" alt="QR Code">
+        <div class="rera">
+          <strong>PM1260002501640</strong>
+          <span>Maharera.maharashtra.gov.in</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p class="disclaimer"><b>Disclaimer</b>: All images shown, barring the ones marked otherwise, are artist impressions and stock images. This printed material is in respect of an ongoing project and does not constitute an offer, an invitation to offer and /or commitment of any nature between the recipient and us . Proposed amenities included are subject to various approval/s, sanction/s, consent/s from relevant authorities and are subject to change. In the  event that proposed amenities are not available due to non- feasibility or approvals then we do not assume any liability or responsibility for the same and the customer shall have no claims against us whatsoever. All specifications of the flat shall be as per the final agreement between the parties. Recipients are advised to use their discretion in relying on the information/amenities</p>
+      <p class="copyright">© 2026. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Floating Button -->
+<div class="floating-cta" id="openPopup">
+  <img src="assets/images/call.svg" alt="">
+</div>
+
+<!-- Popup Overlay -->
+<div class="popup-overlay" id="popupOverlay">
+
+  <div class="popup-box">
+
+    <span class="popup-close" id="closePopup">&times;</span>
+
+    <div class="popup-form">
+      <h3>Enquire Now</h3>
+      <form>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Mobile Number">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
